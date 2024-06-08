@@ -19,17 +19,19 @@
    <link rel="stylesheet" href="css/magnific-popup.css">
    <link rel="stylesheet" href="css/custom.css">
    <title>Auracore Tech</title>
-   <script src="js/contact.js"></script>
+   
+   
    <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
    </script>
    <script type="text/javascript">
-      (function(){
-         emailjs.init({
-            publicKey:"8p8_XwFxEbvGqfOoL"
-         });
+      (function () {
+        emailjs.init("8p8_XwFxEbvGqfOoL");
       })();
-   </script>
+    </script>
+
+   
+
 </head>
 <body>
 
@@ -50,36 +52,26 @@
                <li class="nav-item dropdown">
                   <a class="nav-link" data-toggle="collapse" href="#menu1">Pages <i class="fal fa-angle-down"></i></a>
                   <div id="menu1" class="dropdown-menus collapse">
-                     <a class="dropdown-item" href="#"><span>About Us</span></a>
-                     <a class="dropdown-item" href="#"><span>Faq</span></a>
-                     <a class="dropdown-item" href="#"><span>Pricing</span></a>
-                     <a class="dropdown-item" href="#"><span>Team</span></a>
-                     <a class="dropdown-item" href="#"><span>Coming Soon</span></a>
-                     <a class="dropdown-item" href="#"><span>Error 404</span></a>
-                     <a class="dropdown-item" href="#"><span>Site Down</span></a>
+                     <a class="dropdown-item" href="wip.html"><span>About Us</span></a>
+                     <a class="dropdown-item" href="wip.html"><span>Faq</span></a>
+                     <a class="dropdown-item" href="pricing.html"><span>Pricing</span></a>
+                     <a class="dropdown-item" href="team.html"><span>Team</span></a>
                   </div>
                </li>
+               
                <li class="nav-item dropdown">
-                  <a class="nav-link" data-toggle="collapse" href="#menu2">Services <i class="fal fa-angle-down"></i></a>
-                  <div id="menu2" class="dropdown-menus collapse">
-                     <a class="dropdown-item" href="#"><span>Services</span></a>
-                     <a class="dropdown-item" href="#"><span>Services Details</span></a>
+                  <a class="nav-link" data-toggle="collapse" href="#menu3">Services <i class="fal fa-angle-down"></i></a>
+                  <div id="menu1" class="dropdown-menus collapse">
+                     <a class="dropdown-item" href="webpage.html"><span>Web Development</span></a>
+                     <a class="dropdown-item" href="#"><span>App Development</span></a>
+                     <a class="dropdown-item" href="wip.html"><span>Graphics Design</span></a>
+                     <a class="dropdown-item" href="wip.html"><span>UI/UX Design</span></a>
+                     <a class="dropdown-item" href="wip.html"><span>Digital Marketing</span></a> 
+                     <a class="dropdown-item" href="wip.html"><span>Video Editing</span></a> 
                   </div>
                </li>
-               <li class="nav-item dropdown">
-                  <a class="nav-link" data-toggle="collapse" href="#menu3">Blog <i class="fal fa-angle-down"></i></a>
-                  <div id="menu3" class="dropdown-menus collapse">
-                     <a class="dropdown-item" href="#"><span>Blog</span></a>
-                     <div class="dropdown-2">
-                        <a class="dropdown-item" data-toggle="collapse" href="#menu4"><span>Blog Details</span> <i class="fal fa-angle-right"></i></a>
-                        <div id="menu4" class="dropdown-menus-2 collapse">
-                           <a class="dropdown-item" href="#"><span>Blog Details 1</span></a>
-                           <a class="dropdown-item" href="#"><span>Blog Details 2</span></a>
-                           <a class="dropdown-item" href="#"><span>Blog Details 3</span></a>
-                        </div>
-                     </div>
-                  </div>
-               </li>
+            
+               <li class="nav-item"><a class="nav-link" href="wip.html"> Blog</a></li>
                <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
             </ul>
          </div>
@@ -153,8 +145,9 @@
                   </div>
                </div>
             </div>
+            <!-- action="https://formsubmit.co/df06de29ce44bfcf0b65a9f58da12ce8" method="POST" -->
             <div class="col-lg-6">
-               <form class="wow fadeInUpBig" data-wow-duration="1.5s">
+               <form class="wow fadeInUpBig" data-wow-duration="1.5s" >
                   <div class="form-row">
                      <div class="form-group col-md-6">
                         <input type="text" class="form-control" id="name" name="name" placeholder="Your Name">
@@ -172,11 +165,15 @@
                         <textarea class="form-control" rows="8" cols="80" id="message" name="message" placeholder="Write Message"></textarea>
                      </div>
                   </div>
-                  <button class="btn layer-btn" onclick="sendMail()">SEND MESSAGE</button>
+                  <button class="btn layer-btn" type="submit">SEND MESSAGE</button>
                </form>
             </div>
          </div>
       </div>
+      <script src="js/contact.js"></script>
+      <script src="https://smtpjs.com/v3/smtp.js">
+      </script>
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
    </section>
 
 

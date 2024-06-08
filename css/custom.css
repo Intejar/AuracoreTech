@@ -299,6 +299,58 @@ i {
   z-index: 5;
   transition: .4s; }
 
+#team{
+  padding-top:100px;
+}
+
+#team h2{
+  color: #453E69;
+}
+
+
+  .card-img-top{
+    border-radius: 50%;
+    height: 250px !important;
+    width: 250px !important;
+    position: relative;
+    left: 80px;
+    top: -80px;
+    object-fit: cover;
+}
+.card{
+    border-radius: 0;
+    cursor: pointer;
+    margin-top: 100px !important;
+    border-radius: 2%;
+}
+
+.card:hover{
+    box-shadow: rgba(183, 124, 238, 0.921) 0px 4px 10px, rgba(119, 20, 164, 0.904) 0px 4px 10px;
+
+}
+.card p{
+  color: #999;
+}
+
+.card h5{
+  color: #453E69;
+}
+.card h6{
+  color: #453E69;
+}
+
+.card-body{
+    margin-top: -50px;
+}
+.bi{
+    font-size: 25px;
+    color: #7f9a9d;
+}
+.bi:hover{
+    color: #453E69;
+}
+
+
 #homeSection {
   background: #171818;
   position: relative;
@@ -1103,6 +1155,8 @@ i {
 #contactSection {
   margin-bottom: 20px;
   padding-top: 100px;
+  padding-bottom: 100px;
+  background: white;
 }
 
   #contactSection .sec-header {
@@ -1131,7 +1185,7 @@ i {
       #contactSection .icon-box .icon .fal {
         font-size: 20px;
         padding-top: 20px;
-        color: #000; }
+        color: #fff; }
     #contactSection .icon-box .txt p {
       margin-bottom: 0;
       color: #222429; }
@@ -1488,12 +1542,18 @@ i {
     
 
 @media (max-width: 768px) {
+  
   #homeSection .txt-area h1 {
     font-size: 70px; }
   #workSection .work-box {
     border-right: none !important; } }
 
 @media (max-width: 552px) {
+  .card-img-top{
+        
+        left: 48px !important;
+       
+    }
   #homesection .row{
     display: block;
   }
