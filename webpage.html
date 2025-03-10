@@ -24,10 +24,29 @@
    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.4.0/build/spline-viewer.js"></script>
    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+
+   <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.12.0/tsparticles.bundle.min.js"></script>
+
    
 
     
-
+   <style>
+     
+   
+   /* Overlay gets the padding */
+   
+   
+   /* Particle Background Container */
+   #tsparticles {
+     position: absolute;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     z-index: -1;
+   }
+   
+   </style>
 
 </head>
 <body>
@@ -37,8 +56,8 @@
    <!-- ======================================== NAVIGRATION ======================================== -->
    <nav id="navigration" class="navbar fixed-top p-0">
       <div class="container">
-         <!-- <a class="logo" href="#"><img src="img/logo.png" alt=""></a> -->
-         <a class="logo" href="#">Auracore Tech</a>
+         
+        <a class="logo" href="#"><img src="img/AURACORE TECH LOGO NAME PIC.png" alt="Auracore Tech Logo" class="img-fluid" style="max-height: 60px;"></a>
          <div class="sidenav">
             <div class="header">
                <a class="logo d-lg-none" href="#">Auracore Tech</a>
@@ -46,33 +65,25 @@
             </div>
             <ul class="mb-0">
                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-               <li class="nav-item dropdown">
-                  <a class="nav-link" data-toggle="collapse" href="#menu1">Pages <i class="fal fa-angle-down"></i></a>
-                  <div id="menu1" class="dropdown-menus collapse">
-                     <a class="dropdown-item" href="about.html"><span>About Us</span></a>
-                     <a class="dropdown-item" href="wip.html"><span>Faq</span></a>
-                     <a class="dropdown-item" href="pricing.html"><span>Pricing</span></a>
-                     <a class="dropdown-item" href="team.html"><span>Team</span></a>
-                  </div>
-               </li>
-               
+               <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
                <li class="nav-item dropdown">
                   <a class="nav-link" data-toggle="collapse" href="#menu2">Services <i class="fal fa-angle-down"></i></a>
                   <div id="menu2" class="dropdown-menus collapse">
                      <a class="dropdown-item" href="webpage.html"><span>Web Development</span></a>
                      <a class="dropdown-item" href="app.html"><span>App Development</span></a>
-                     <a class="dropdown-item" href="wip.html"><span>Graphics Design</span></a>
-                     <a class="dropdown-item" href="wip.html"><span>UI/UX Design</span></a>
-                     <a class="dropdown-item" href="wip.html"><span>Digital Marketing</span></a> 
-                     <a class="dropdown-item" href="wip.html"><span>Video Editing</span></a> 
+                     <a class="dropdown-item" href=""><span>Graphics Design</span></a>
+                     <a class="dropdown-item" href=""><span>UI/UX Design</span></a>
+                     <a class="dropdown-item" href=""><span>Digital Marketing</span></a> 
+                     <a class="dropdown-item" href=""><span>Video Editing</span></a> 
                   </div>
                </li>
+               <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+               <li class="nav-item"><a class="nav-link" href="team.html">Team</a></li>
             
-               <li class="nav-item"><a class="nav-link" href="wip.html"> Blog</a></li>
                <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
             </ul>
          </div>
-         <button class="btn font-btn get-quote d-none d-md-block"><a href="contact.html" class="nav-link"><i class="fal fa-chevron-right"></i> <span>Book Appointment</span></a></button>
+         <button class="btn font-btn get-quote d-none d-md-block"><a href="contact.html" class="nav-link"><i class="fal fa-chevron-right"></i> <span>Make It Happen </span></a></button>
          <div id="hamburger" class="d-lg-none">
             <img src="img/icon/menu.png" class="img01" alt="">
          </div>
@@ -82,7 +93,7 @@
 
 
    <!-- ======================================== HOME SECTION ======================================== -->
-   <section id="homeSection">
+   <section id="bannerSection">
       
          <div class="">
             <div class="overlay">
@@ -141,224 +152,97 @@
 
 
 
-   <!-- ======================================== FEATURE SECTION ======================================== -->
-   <!-- <section id="featureSection">
-      <div class="container">
-         <div class="row">
-            <div class="col-lg-7">
-               <div class="img-box">
-                  <img src="img/featured-image-1.jpg" class="img01 wow slideInLeft" data-wow-duration="1.5s" alt="">
-                  <img src="img/featured-image-2.jpg" class="img02 wow slideInLeft" data-wow-duration="2s" alt="">
-               </div>
-            </div>
-            <div class="col-lg-5">
-               <div class="txt-box">
-                  <div class="sec-header">
-                     <h2>WE’RE THE BEST AGENCY IN DOWNTOWN</h2>
-                     <h4>WE ARE COMMITTED TO PROVIDING OUR CUSTOMERS WITH EXCEPTIONAL SERVICE WHILE OFFERING OUR EMPLOYEES THE BEST TRAINING.</h4>
-                     <p>Lorem Ipsum is simply dummy text of free available in market the printing and typesetting industry has been the industry's standard dummy text ever.</p>
-                  </div>
-                  <div class="part2">
-                     <ul>
-                        <li><i class="fal fa-check"></i> Suspe ndisse suscipit sagittis leo.</li>
-                        <li><i class="fal fa-check"></i> Entum estibulum dignissim posuere.</li>
-                        <li><i class="fal fa-check"></i> If you are going to use a passage.</li>
-                     </ul>
-                     <div class="since">
-                        <span>SINCE <br>2024</span>
-                     </div>
-                  </div>
-                  <a href="#" class="btn layer-btn">DISCOVER MORE</a>
-               </div>
-            </div>
-         </div>
-      </div>
-   </section> -->
-
-
-
-   <!-- ======================================== SERVICE SECTION ======================================== -->
-   <!-- <section id="specialFeature" class="specialFeature2 px-lg-5">
-      <div class="container">
-         <div class="row">
-            <div class="col">
-               <div class="sec-header">
-                  <h2>We Provide</h2>
-               </div>
-            </div>
-         </div>
-         <div class="row">
-            <div class="col-md-2"></div>
-            <div class="col-md-8 ">
-               <div class="row">
-                  <div class="col-xl-4 col-md-4">
-                     <div class="service-box">
-                        <div class="img-box">
-                           <img src="img/service01.jpg" alt="">
-                        </div>
-                        <div class="txt-box">
-                           <h4>Web Development</h4>
-                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                           <a href="service.html" class="btn font-btn"><i class="fal fa-chevron-right" aria-hidden="true"></i></a>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-xl-4 col-md-4">
-                     <div class="service-box">
-                        <div class="img-box">
-                           <img src="img/service01.jpg" alt="">
-                        </div>
-                        <div class="txt-box">
-                           <h4>App Development</h4>
-                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                           <a href="service.html" class="btn font-btn"><i class="fal fa-chevron-right" aria-hidden="true"></i></a>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-xl-4 col-md-4">
-                     <div class="service-box">
-                        <div class="img-box">
-                           <img src="img/service03.jpg" alt="">
-                        </div>
-                        <div class="txt-box">
-                           <h4>Graphics Design</h4>
-                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                           <a href="service.html" class="btn font-btn"><i class="fal fa-chevron-right" aria-hidden="true"></i></a>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-xl-4 col-md-4">
-                     <div class="service-box">
-                        <div class="img-box">
-                           <img src="img/service01.jpg" alt="">
-                        </div>
-                        <div class="txt-box">
-                           <h4>UI/UX Design</h4>
-                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                           <a href="service.html" class="btn font-btn"><i class="fal fa-chevron-right" aria-hidden="true"></i></a>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-xl-4 col-md-4">
-                     <div class="service-box">
-                        <div class="img-box">
-                           <img src="img/service02.jpg" alt="">
-                        </div>
-                        <div class="txt-box">
-                           <h4>Digital Marketing</h4>
-                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                           <a href="service.html" class="btn font-btn"><i class="fal fa-chevron-right" aria-hidden="true"></i></a>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-xl-4 col-md-4">
-                     <div class="service-box">
-                        <div class="img-box">
-                           <img src="img/service02.jpg" alt="">
-                        </div>
-                        <div class="txt-box">
-                           <h4>Video Editing</h4>
-                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                           <a href="service.html" class="btn font-btn"><i class="fal fa-chevron-right" aria-hidden="true"></i></a>
-                        </div>
-                     </div>
-                  </div>
-                  
-               </div>
-            </div>
-            <div class="col-md-2"></div>
-           
-         </div>
-      </div>
-   </section> -->
+  
 
 
    <section id="serviceSection">
-    <div class="container">
-       <div class="row">
-          <div class="col-lg-6 mb-5 mb-lg-0">
-             <div class="sec-header">
-                <h2>WE SHAPE THE PERFECT SOLUTIONS</h2>
-                <p>Whatever your challenge is, there would be few things in the web development world that we haven’t worked with. Tap our custom web development services to create seamless web experiences that captivate. Our Auracore team delivers:</p>
-             </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-             <div class="service-box wow slideInRight" data-wow-duration="1.5s">
-                <div class="txt-area">
-                   <h3>01</h3>
-                   <h4>UI/UX <br>DESIGNING</h4>
-                </div>
-                <div class="img-box">
-                  <img src="img/icon/graphic-design.png" alt="" class="img01">
-                  <img src="img/icon/graphic-design02.png" alt="" class="img02">
-                </div>
-             </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-             <div class="service-box wow slideInRight" data-wow-duration="1.5s">
-                <div class="txt-area">
-                   <h3>02</h3>
-                   <h4>Front-end <br>DEVELOPMENT</h4>
-                </div>
-                <div class="img-box">
-                   <img src="img/icon/app-development.png" alt="" class="img01">
-                   <img src="img/icon/app-development02.png" alt="" class="img02">
-                </div>
-             </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-             <div class="service-box wow slideInRight" data-wow-duration="1.5s">
-                <div class="txt-area">
-                   <h3>03</h3>
-                   <h4>Back-end <br>DEVELOPMENT</h4>
-                </div>
-                <div class="img-box">
-                  <img src="img/icon/uiux.png" alt="" class="img01">
-                  <img src="img/icon/uiux02.png" alt="" class="img02">
-                </div>
-             </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-             <div class="service-box wow slideInRight" data-wow-duration="1.5s">
-                <div class="txt-area">
-                   <h3>04</h3>
-                   <h4>API <br>Integration</h4>
-                </div>
-                <div class="img-box">
-                   <img src="img/icon/digital-marketing.png" alt="" class="img01">
-                   <img src="img/icon/digital-marketing02.png" alt="" class="img02">
-                </div>
-             </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-             <div class="service-box wow slideInRight" data-wow-duration="1.5s">
-                <div class="txt-area">
-                   <h3>05</h3>
-                   <h4>Web  <br> Consulting</h4>
-                </div>
-                <div class="img-box">
-                 
-                   <img src="img/icon/content-writing.png" alt="" class="img01">
-                   <img src="img/icon/content-writing02.png" alt="" class="img02">
+      <div class="container">
+         <div class="row mb-4">
+            <div class="col-lg-6 ">
+               <div class="sec-header">
+                  <h2>WE SHAPE THE PERFECT SOLUTIONS</h2>
+                  <p>Whatever your challenge is, there would be few things in the web development world that we haven’t worked with. Tap our custom web development services to create seamless web experiences that captivate. Our Auracore team delivers:</p>
+               
+               </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+               <div class="service-box wow slideInRight" data-wow-duration="1.5s">
+                  <div class="txt-area">
+                     <h3>01</h3>
+                     <h4>UI/UX <br>DESIGNING</h4>
+                  </div>
+                  <div class="img-box">
+                    <img src="img/icon/graphic-design.png" alt="" class="img01">
+                    <img src="img/icon/graphic-design02.png" alt="" class="img02">
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+               <div class="service-box wow slideInRight" data-wow-duration="1.5s">
+                  <div class="txt-area">
+                     <h3>02</h3>
+                     <h4>Front-end <br>DEVELOPMENT</h4>
+                  </div>
+                  <div class="img-box">
+                     <img src="img/icon/app-development.png" alt="" class="img01">
+                     <img src="img/icon/app-development02.png" alt="" class="img02">
+                  </div>
+               </div>
+            </div>
+            
+            <div class="col-lg-3 col-md-6 mt-3">
+               <div class="service-box wow slideInRight" data-wow-duration="1.5s">
+                  <div class="txt-area">
+                     <h3>03</h3>
+                     <h4>Back-end <br>DEVELOPMENT</h4>
+                  </div>
+                  <div class="img-box">
+                    <img src="img/icon/uiux.png" alt="" class="img01">
+                    <img src="img/icon/uiux02.png" alt="" class="img02">
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mt-3">
+               <div class="service-box wow slideInRight" data-wow-duration="1.5s">
+                  <div class="txt-area">
+                     <h3>04</h3>
+                     <h4>API <br>Integration</h4>
+                  </div>
+                  <div class="img-box">
+                     <img src="img/icon/digital-marketing.png" alt="" class="img01">
+                     <img src="img/icon/digital-marketing02.png" alt="" class="img02">
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mt-3">
+               <div class="service-box wow slideInRight" data-wow-duration="1.5s">
+                  <div class="txt-area">
+                     <h3>05</h3>
+                     <h4>Web  <br> Consulting</h4>
+                  </div>
+                  <div class="img-box">
                    
-                </div>
-             </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-             <div class="service-box wow slideInRight" data-wow-duration="1.5s">
-                <div class="txt-area">
-                   <h3>06</h3>
-                   <h4>Support <br>Maintainance</h4>
-                </div>
-                <div class="img-box">
-                   <img src="img/icon/web-development.png" alt="" class="img01">
-                   <img src="img/icon/web-development02.png" alt="" class="img02">
-                </div>
-             </div>
-          </div>
-       </div>
-    </div>
- </section>
+                     <img src="img/icon/content-writing.png" alt="" class="img01">
+                     <img src="img/icon/content-writing02.png" alt="" class="img02">
+                     
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mt-3">
+               <div class="service-box wow slideInRight" data-wow-duration="1.5s">
+                  <div class="txt-area">
+                     <h3>06</h3>
+                     <h4>Support <br>Maintainance</h4>
+                  </div>
+                  <div class="img-box">
+                     <img src="img/icon/web-development.png" alt="" class="img01">
+                     <img src="img/icon/web-development02.png" alt="" class="img02">
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
 
 
 
@@ -607,54 +491,95 @@
             </div>
          </div>
          <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-6">
                <div class="pricing-box wow bounceInLeft" data-wow-duration="2s">
                   <h4>Basic Plan</h4>
-                  <h3>BDT.19,999/$349</h3>
+                  <h3>$99++</h3>
+                  <!-- <h4> For individuals/creators, startups and small businesses looking for a sleek, professional online presence.</h4> -->
                   <ul>
-                    <li>3GB SSD Hosting</li>
-                     <li>5 Normal Pages</li>
+                    
+                    <li> Custom Design</li>
+                     <li>3 Responsive Pages</li>
                      <li>Responsive</li>
                      <li>Social Media Integration</li>
-                     <li>HTML/CSS/React JS</li>
-                     <li>Free Support</li>
-                     <li>Handover within 15 to 20 days</li>
+                     <li>Gallery</li>
+                     <li>1GB SSD Hosting</li>
+                     <li >Handover 10 business days or less
+                     </li>
+                    
+                    
                   </ul>
-                  <a href="pricing.html" class="btn font-btn"><i class="fal fa-chevron-right" aria-hidden="true"></i> <span>Contact Us</span></a>
+                  <a href="contact.html" class="btn font-btn" data-bs-toggle="tooltip" data-bs-placement="top" 
+      title="At Auracore Tech, we don’t just build websites—we craft tailor-made digital experiences that align perfectly with your vision, brand, and goals. Because every project is unique, our pricing is customized to reflect the level of complexity, functionality, and sophistication you require. Here’s a general breakdown of what you can expect based on your needs.">
+      <i class="fal fa-chevron-right" aria-hidden="true"></i> <span>Contact Us</span>
+   </a>
                </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-6">
                <div class="pricing-box wow bounceInLeft" data-wow-duration="2s">
-                  <h4>Standard Plan</h4>
-                  <h3>BDT.39,999/$599</h3>
+                  <h4>Essential Plan</h4>
+                  <h3>$225++</h3>
+                  <!-- <h4> For individuals/creators, startups and small businesses looking for a sleek, professional online presence.</h4> -->
                   <ul>
-                     <li>3GB SSD Hosting</li>
-                     <li>5 Normal Pages</li>
-                     <li>3 Dynamic Pages</li>
-                     <li>Authentication</li>
                      <li>Custom Design</li>
-                     <li>Free Support</li>
-                     <li>Handover within 20 to 30 days</li>
+                     <li>5 Responsive Pages</li>
+                     <!-- <li>Responsive</li> -->
+                     <li>Social Media Integration</li>
+                     <li>Online Store</li>
+                     <li>Payment Gateway</li>
+                     <li>3GB SSD Hosting</li>
+                     <li>Handover 30 business days or more
+                     </li>
                   </ul>
-                  <a href="pricing.html" class="btn font-btn"><i class="fal fa-chevron-right" aria-hidden="true"></i> <span>Contact Us</span></a>
+                  <a href="contact.html" class="btn font-btn" data-bs-toggle="tooltip" data-bs-placement="top" 
+      title="At Auracore Tech, we don’t just build websites—we craft tailor-made digital experiences that align perfectly with your vision, brand, and goals. Because every project is unique, our pricing is customized to reflect the level of complexity, functionality, and sophistication you require. Here’s a general breakdown of what you can expect based on your needs.">
+      <i class="fal fa-chevron-right" aria-hidden="true"></i> <span>Contact Us</span>
+   </a>
                </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-6">
+               <div class="pricing-box wow bounceInLeft" data-wow-duration="2s">
+                  <h4>Advanced Plan</h4>
+                  <h3>$349++</h3>
+                  <ul>
+                     <!-- <li>Custom Design</li> -->
+                     <li>5 Responsive Pages</li>
+                     <li>3 Dynamic Pages</li>
+                     <li>Database Integration</li>
+                     <li>Payment Gateway</li>
+                     <li>Security System</li>
+                     <li>SEO Integration</li>
+                     <!-- <li>Authentication</li> -->
+                     <li>Handover within 30 days or more</li>
+                  </ul>
+                  <a href="contact.html" class="btn font-btn" data-bs-toggle="tooltip" data-bs-placement="top" 
+      title="At Auracore Tech, we don’t just build websites—we craft tailor-made digital experiences that align perfectly with your vision, brand, and goals. Because every project is unique, our pricing is customized to reflect the level of complexity, functionality, and sophistication you require. Here’s a general breakdown of what you can expect based on your needs.">
+      <i class="fal fa-chevron-right" aria-hidden="true"></i> <span>Contact Us</span>
+   </a>
+               </div>
+            </div>
+            <div class="col-md-6">
                <div class="pricing-box wow bounceInLeft" data-wow-duration="2s">
                   <h4>Premium Plan</h4>
-                  <h3>BDT.79,999/$1499</h3>
+                  <h3>Contact For Price</h3>
                   <ul>
-                     <li>10GB SSD Hosting</li>
-                     <li>10 Normal Pages</li>
+                     <!-- <li>Custom Design</li> -->
+                     <li>10 Responsive Pages</li>
                      <li>5 Dynamic Pages</li>
                      <li>Database Integration</li>
                      <li>Payment Gateway</li>
                      <li>Security System</li>
-                     <li>Handover within 60 to 180 days</li>
+                     <li>SEO Integration</li>
+                     <!-- <li>Authentication</li> -->
+                     <li>Handover within 60 days or more </li>
                   </ul>
-                  <a href="pricing.html" class="btn font-btn"><i class="fal fa-chevron-right" aria-hidden="true"></i> <span>Contact Us</span></a>
+                  <a href="contact.html" class="btn font-btn" data-bs-toggle="tooltip" data-bs-placement="top" 
+                  title="At Auracore Tech, we don’t just build websites—we craft tailor-made digital experiences that align perfectly with your vision, brand, and goals. Because every project is unique, our pricing is customized to reflect the level of complexity, functionality, and sophistication you require. Here’s a general breakdown of what you can expect based on your needs.">
+                  <i class="fal fa-chevron-right" aria-hidden="true"></i> <span>Contact Us</span>
+               </a>
                </div>
             </div>
+   
          </div>
       </div>
    </section>
@@ -972,11 +897,29 @@
    <script src="js/owl.carousel.min.js"></script>
    <script src="js/custom.js"></script>
    <script>
-
-
-
-
-
+      document.addEventListener('DOMContentLoaded', function () {
+      tsParticles.load("tsparticles", {
+         particles: {
+            number: { value: 100, density: { enable: true, value_area: 900 } },
+            color: { value: "#A6C2F7" },
+            shape: { type: "circle" },
+            opacity: { value: 0.5, random: true },
+            size: { value: 3, random: true },
+            move: { enable: true, speed: 1 },
+            line_linked: {
+               enable: true,
+               distance: 150,
+               color: "#A6C2F7",
+               opacity: 0.3,
+               width: 1
+            }
+         },
+         interactivity: {
+            events: {
+               onHover: { enable: true, mode: "repulse" }
+            }
+         }
+      })});
    </script>
 </body>
 </html>

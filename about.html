@@ -30,7 +30,112 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
    
+    <style>
+      body {
+  
+  background: white!important;
+  color: #24437E;
+   }
+   .card{
+      background-color: #F6F9F9;
+   }
+   #about{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 90vh;
+  width: 85vw;
+  margin: 0 auto;
+  padding: 150px 0px 150px 0px;
+  color: #24437E;
+  align-items: center;
+}
 
+
+
+      .profile-card {
+         max-width: 100%;
+         width: 850px;
+         margin: auto;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         background: #F6F9F9;
+         border-radius: 15px;
+         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+         overflow: hidden;
+         padding: 30px;
+     }
+ 
+     .details-section {
+         flex: 1;
+         padding-right: 20px; /* Space between text and image */
+         text-align: left;
+     }
+ 
+     .details-section h2 {
+         font-size: 30px;
+         color: #1d1b42;
+         margin-bottom: 5px;
+         font-weight: bold;
+     }
+ 
+     .details-section p {
+         font-size: 20px;
+         color: #666;
+         margin-bottom: 10px;
+         line-height: 1.5;
+     }
+ 
+     .social-links {
+         display: flex;
+         gap: 12px;
+         margin-top: 10px;
+     }
+ 
+     .social-links a {
+         width: 32px;
+         height: 32px;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         background: #ddd;
+         color: #333;
+         border-radius: 50%;
+         text-decoration: none;
+         font-size: 16px;
+         transition: 0.3s;
+     }
+ 
+     .social-links a:hover {
+         background: #555;
+         color: #fff;
+     }
+ 
+     .image-container {
+         flex: 0 0 40%;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+     }
+ 
+     .image-container img {
+         width: 100%;
+         max-width: 250px;
+         height: 250px;
+         border-radius: 50%;
+         border: 5px solid #ddd;
+         object-fit: cover;
+ 
+       
+     }
+     /* .profile-card-img-top{
+     border-radius: 50%;
+     height: 250px !important;
+     width: 250px !important;
+     position: absolute;
+     left: 200px;
+     object-fit: cover;} */
+   </style>
     
 
 
@@ -41,48 +146,40 @@
 
    <!-- ======================================== NAVIGRATION ======================================== -->
    <nav id="navigration" class="navbar fixed-top p-0">
-    <div class="container">
-       <!-- <a class="logo" href="#"><img src="img/logo.png" alt=""></a> -->
-       <a class="logo" href="#">Auracore Tech</a>
-       <div class="sidenav">
-          <div class="header">
-             <a class="logo d-lg-none" href="#">Auracore Tech</a>
-             <a href="#" class="d-lg-none" id="showsidenav"><img src="img/icon/letter-x.png" alt=""> </a>
-          </div>
-          <ul class="mb-0">
-             <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-             <li class="nav-item dropdown">
-                <a class="nav-link" data-toggle="collapse" href="#menu1">Pages <i class="fal fa-angle-down"></i></a>
-                <div id="menu1" class="dropdown-menus collapse">
-                   <a class="dropdown-item" href="about.html"><span>About Us</span></a>
-                   <a class="dropdown-item" href="wip.html"><span>Faq</span></a>
-                   <a class="dropdown-item" href="pricing.html"><span>Pricing</span></a>
-                   <a class="dropdown-item" href="team.html"><span>Team</span></a>
-                </div>
-             </li>
-             
-             <li class="nav-item dropdown">
-                <a class="nav-link" data-toggle="collapse" href="#menu2">Services <i class="fal fa-angle-down"></i></a>
-                <div id="menu2" class="dropdown-menus collapse">
-                   <a class="dropdown-item" href="webpage.html"><span>Web Development</span></a>
-                   <a class="dropdown-item" href="app.html"><span>App Development</span></a>
-                   <a class="dropdown-item" href="wip.html"><span>Graphics Design</span></a>
-                   <a class="dropdown-item" href="wip.html"><span>UI/UX Design</span></a>
-                   <a class="dropdown-item" href="wip.html"><span>Digital Marketing</span></a> 
-                   <a class="dropdown-item" href="wip.html"><span>Video Editing</span></a> 
-                </div>
-             </li>
-          
-             <li class="nav-item"><a class="nav-link" href="wip.html"> Blog</a></li>
-             <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
-          </ul>
-       </div>
-       <button class="btn font-btn get-quote d-none d-md-block"><a href="contact.html" class="nav-link"><i class="fal fa-chevron-right"></i> <span>Book Appointment</span></a></button>
-       <div id="hamburger" class="d-lg-none">
-          <img src="img/icon/menu.png" class="img01" alt="">
-       </div>
-    </div>
- </nav>
+      <div class="container">
+         
+        <a class="logo" href="#"><img src="img/AURACORE TECH LOGO NAME PIC.png" alt="Auracore Tech Logo" class="img-fluid" style="max-height: 60px;"></a>
+         <div class="sidenav">
+            <div class="header">
+               <a class="logo d-lg-none" href="#">Auracore Tech</a>
+               <a href="#" class="d-lg-none" id="showsidenav"><img src="img/icon/letter-x.png" alt=""> </a>
+            </div>
+            <ul class="mb-0">
+               <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+               <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+               <li class="nav-item dropdown">
+                  <a class="nav-link" data-toggle="collapse" href="#menu2">Services <i class="fal fa-angle-down"></i></a>
+                  <div id="menu2" class="dropdown-menus collapse">
+                     <a class="dropdown-item" href="webpage.html"><span>Web Development</span></a>
+                     <a class="dropdown-item" href="app.html"><span>App Development</span></a>
+                     <a class="dropdown-item" href=""><span>Graphics Design</span></a>
+                     <a class="dropdown-item" href=""><span>UI/UX Design</span></a>
+                     <a class="dropdown-item" href=""><span>Digital Marketing</span></a> 
+                     <a class="dropdown-item" href=""><span>Video Editing</span></a> 
+                  </div>
+               </li>
+               <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+               <li class="nav-item"><a class="nav-link" href="team.html">Team</a></li>
+            
+               <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+            </ul>
+         </div>
+         <button class="btn font-btn get-quote d-none d-md-block"><a href="contact.html" class="nav-link"><i class="fal fa-chevron-right"></i> <span>Make It Happen </span></a></button>
+         <div id="hamburger" class="d-lg-none">
+            <img src="img/icon/menu.png" class="img01" alt="">
+         </div>
+      </div>
+   </nav>
 
 
 
@@ -93,39 +190,145 @@
         <dotlottie-player  src="https://lottie.host/f28cdce5-0e2a-4d89-9cf3-9bea404c3af0/Ld5VlAyxsc.json" background="transparent" speed="1" style="width: 350px; height: 500px;" loop autoplay></dotlottie-player>
     </div>
 
-    <div class = "content">
+    <div class = "">
         <h2>About Us</h2>
         <span><!-- line here --></span>
 
-        <p>Auracore Tech provide perfect solution for you web and mobile application as well as help you to grow you business with best marketing team.</p>
+        <p>At Auracore Tech, we are more than just a software development company—we are innovators, problem-solvers, and visionaries dedicated to transforming ideas into cutting-edge digital solutions. Our expertise spans across AI, Blockchain, ERP, IoT, SaaS, and custom software development, making us a one-stop destination for businesses and individuals looking to bring their ideas to life.
 
-        <ul class = "links">
-            <li><a href = "index.html">work</a></li>
+        <br> With a strong commitment to innovation, scalability, and efficiency, we integrate modern technologies to empower businesses of all sizes, from startups to enterprises. Our focus is on delivering cost-effective yet powerful solutions, ensuring robust backend support, and providing seamless AI and IoT upgrades whenever needed.
+         
+        <br> At the core of our company lies our belief in ethical practices, diversity, and sustainability. We uphold the highest standards of integrity, ensuring that our software solutions contribute not just to business success but also to a smarter, more connected, and sustainable world.
+         
+         <br>Driven by a passion for excellence and industry leadership, we continuously push boundaries in emerging technologies. Our goal is to lead the competitive market, helping businesses thrive in an era of rapid digital transformation. Whether it’s enhancing business operations, streamlining workflows, or building the future of tech, we are here to make it happen.
+         
+          </p>
+         <h4>Join us in shaping the future—where your vision meets our innovation.</h4>
 
-            <div class = "vertical-line"></div>
-
-            <li><a href = "webpage.html">service</a></li>
-
-            <div class = "vertical-line"></div>
-            
-            <li><a href = "contact.html">contact</a></li>
-        </ul>
-
-        <ul class = "icons">
-            <li>
-                <i class = "fa fa-twitter"></i>
-            </li>
-            <li>
-                <i class = "fa fa-facebook"></i>
-            </li>
-            <li>
-                <i class = "fa fa-github"></i>
-            </li>
-            <li>
-                <i class = "fa fa-pinterest"></i>
-            </li>
-        </ul>
+       
     </div>
+</section> 
+<section id="team">
+   <div class="container text-center py-5">
+       <h2 >Our Team.</h2>
+       <h4 class="text-muted mb-5">We are the faces of Auracore Tech-</h4>
+       <div class="profile-card ">
+          <div class="image-container">
+              <img src="./img/masrur.jpeg" class="profile-card-img-top" alt="Profile Picture">
+          </div>
+          <div class="details-section">
+              <h2>MASRUR REZA MASH</h2>
+              <p><strong>Managing Director</strong></p>
+              <p><strong>Head Of Global Business and Customer Relationship</strong></p>
+              <p>Hi there! I am a tech entrepreneur serving as the Managing Director for Auracore Tech. Connect with us, and let’s bring your ambitions to life. </p>
+             
+          </div>
+      </div>
+       <div class="row row-cols-1 row-cols-md-3 g-4 py-5">
+           <div class="col">
+             <div class="card">
+               <img src="./img/Job_Pic.jpeg"class="card-img-top" alt="...">
+               <div class="card-body">
+                 <h5 class="card-title">Intejar Meherab</h5>
+                 <h6 class="card-title">CTO, WEB LEAD</h6>
+                 <p class="card-text">Hi there! I am a full stack Web Developer and Chief Technology Officer of Auracore Tech. I will be your Web Guy! Feel free to reach me.</p>
+               </div>
+              
+             </div>
+           </div>
+           <div class="col">
+             <div class="card">
+               <img src="./img/ceo.jpg"class="card-img-top" alt="...">
+               <div class="card-body">
+                 <h5 class="card-title">Abdurnur Rafi</h5>
+                 <h6 class="card-title">Founder, CEO</h6>
+                 <p class="card-text">Hi there! I am a Digital Marketer & Business Consultant also Chief Executive Officer of Auracore Tech. I will be your Business guy! Feel free to reach me.</p>
+               </div>
+             
+             </div>
+           </div>
+           <div class="col">
+             <div class="card">
+               <img src="./img/abir.png" class="card-img-top" alt="Azmain Picture Daw">
+               <div class="card-body">
+                 <h5 class="card-title">Azmain Iqbal</h5>
+                 <h6 class="card-title">COO, APP Lead</h6>
+                 <p class="card-text">Hi there! I am a Andriod & IOS App Developer and Chief Operating Officer of Auracore Tech. I will be your App Guy! Feel free to reach me.</p>
+               </div>
+               
+             </div>
+           </div>
+           <div class="col">
+            
+           </div>
+           <div class="col">
+             <div class="card">
+               <img src="/img/teamwork-and-team-building.png" class="card-img-top" alt="Azmain Picture Daw">
+               <div class="card-body">
+                 <h5 class="card-title">EXCEPTIONAL TEAM!</h5>
+              
+                 <p class="card-text">Hand picked and highly talented developers.</p>
+               </div>
+               
+             </div>
+           </div>
+        
+         </div>
+         
+   </div>
+
+</section>   
+<section id="about">
+   
+
+   <div class = "">
+       <h2>OUR VISION</h2>
+       <span><!-- line here --></span>
+
+       <p>Our vision is to become a leader in the competitive technology industry by pioneering innovation in AI,<br> excelling in Blockchain and ERP development, and setting new standards in Software and IoT solutions. <br>We are committed to transforming our clients' dreams into reality through cutting-edge technology and futuristic ideas.<br> With a holistic approach, we strive to create a lasting impact that drives progress across industries and enhances the digital landscape for a smarter, more connected future.</p>
+   </div>
+   <div class = "image">
+      <!-- image here -->
+      <dotlottie-player  src="https://lottie.host/65513e0f-a436-48cf-b146-016a799bd3f4/T4xogzCB7a.lottie" background="transparent" speed="1" style="width: 350px; height: 500px;" loop autoplay></dotlottie-player>
+  </div>
+</section> 
+<section id="about">
+   <div class = "image">
+       <!-- image here -->
+       <dotlottie-player  src="https://lottie.host/38bf12d8-6537-4ccf-bb86-d73646c7e522/TCj0EEe5TH.lottie" background="transparent" speed="1" style="width: 350px; height: 500px;" loop autoplay></dotlottie-player>
+   </div>
+
+   <div class = "">
+       <h2>OUR MISSION</h2>
+       <span><!-- line here --></span>
+
+       <p>Our mission is to seamlessly integrate modern technologies with our clients’ dreams, empowering businesses of all sizes—from startups to enterprises—to drive meaningful change in the world. We offer a one-stop solution for software, IoT, AI, ERP, and SaaS development, ensuring scalability, efficiency at minimal cost, robust backend support, and future-ready innovations. Committed to ethical practices, diversity, and a sustainable future, we strive to create technology that not only transforms businesses but also contributes to a better world.
+        
+         </p>
+        
+
+      
+   </div>
+</section> 
+<section id="about">
+   
+
+   <div class = "">
+       <h2>OUR GOALS</h2>
+       <span></span>
+
+       <p>
+         Our goal is to establish ourselves as a trusted global leader in AI, Blockchain, ERP, Software, and IoT development by delivering scalable, cost-efficient, and innovative solutions that transform businesses and industries. We aim to continuously evolve with emerging technologies, ensuring seamless integration and future-ready solutions for our clients. Through ethical practices, a culture of innovation, and a commitment to sustainability, we strive to build a long-term impact that fosters technological advancement, business growth, and a smarter, more connected world.
+        
+         </p>
+        
+
+      
+   </div>
+   <div class = "image">
+      <!-- image here -->
+      <dotlottie-player  src="https://lottie.host/89f20842-928f-48a1-bd01-f010b3be52d2/t5JLP2NHuR.lottie" background="transparent" speed="1" style="width: 350px; height: 500px;" loop autoplay></dotlottie-player>
+  </div>
 </section> 
 
 
@@ -137,17 +340,17 @@
 
 
 
-   <!-- ======================================== CONTACT AREA 2 ======================================== -->
-   <section id="contactArea">
+    <!-- ======================================== CONTACT AREA 2 ======================================== -->
+    <section id="contactArea">
       <div class="container">
          <div class="contact-box wow fadeInRightBi" data-wow-duration="1.5s">
             <div class="row">
-               <div class="col-lg-9 mb-3 mb-lg-0">
+               <div class="col-lg-8 mb-3 mb-lg-0">
                   <div class="sec-header">
-                     <h2>LET'S GET YOUR PROJECT <br>STARTED</h2>
+                     <h2>LET'S MAKE IT HAPPEN!</h2>
                   </div>
                </div>
-               <div class="col-lg-3">
+               <div class="col-lg-4">
                   <a href="contact.html" class="btn layer-btn">CONTACT WITH US</a>
                </div>
             </div>
@@ -163,31 +366,31 @@
    <section id="footerSection">
       <div class="container">
          <div class="row">
-            <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+            <div class="col-lg-4 col-md-6 mb-5 mb-lg-0">
                <div class="footer-box">
                   <a href="#" class="logo">Auracore Tech</a>
                   <p class="about">We are an enterprise software development company that is inspired by the future</p>
-                  <div class="social-links">
+                  <!-- <div class="social-links">
                      <a href="#"><i class="fab fa-facebook"></i></a>
                      <a href="#"><i class="fab fa-twitter"></i></a>
                      <a href="#"><i class="fab fa-instagram"></i></a>
                      <a href="#" class="mr-0"><i class="fab fa-github"></i></a>
-                  </div>
+                  </div> -->
                </div>
             </div>
-            <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+            <div class="col-lg-4 col-md-6 mb-5 mb-lg-0">
                <div class="footer-box box2">
                   <p class="title">EXPLORE</p>
                   <ul>
-                     <li><a href="#">Support</a></li>
-                     <li><a href="#">Privacy</a></li>
-                     <li><a href="#">Policy</a></li>
-                     <li><a href="#">Terms Of Use</a></li>
-                     <li class="mb-0"><a href="#">Help</a></li>
+                     <li><a href="support.html">Support</a></li>
+                     <li><a href="privacy.html">Privacy & Policy</a></li>
+      
+                     <li><a href="careers.html">Careers</a></li>
+                    
                   </ul>
                </div>
             </div>
-            <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
+            <div class="col-lg-4 col-md-6 mb-5 mb-md-0">
                <div class="footer-box box3">
                   <p class="title">CONTACT</p>
                   <div class="icon-box">
@@ -195,7 +398,7 @@
                         <i class="fal fa-map-marker-alt"></i>
                      </div>
                      <div class="txt">
-                        <span>Hillview Housing R/A, Nasirabad, Chattogram, Bangladesh</span>
+                        <span>Texas, USA</span>
                      </div>
                   </div>
                   <div class="icon-box">
@@ -206,17 +409,17 @@
                         <span>auracore.technologies@gmail.com</span>
                      </div>
                   </div>
-                  <div class="icon-box mb-0">
+                  <!-- <div class="icon-box mb-0">
                      <div class="icon">
                         <i class="fal fa-phone-alt"></i>
                      </div>
                      <div class="txt">
                         <span>01855561001</span>
                      </div>
-                  </div>
+                  </div> -->
                </div>
             </div>
-            <div class="col-lg-3 col-md-6">
+            <!-- <div class="col-lg-3 col-md-6">
                <div class="footer-box box4">
                   <p class="title">NEWSLETTER</p>
                   <form>
@@ -227,12 +430,15 @@
                   </form>
                   <span>Sign up for our latest news & articles. We won’t give you spam mails.</span>
                </div>
-            </div>
+            </div> -->
+         </div>
+         <div class="mt-4 statement text-center">
+           <h4 class="">"WE ARE PROUDLY SERVING THE UNITED STATES OF AMERICA AND THE REST OF THE WHOLE WORLD "</h4>
          </div>
          <div class="copy-right">
             <div class="row">
                <div class="col">
-                  <span>Copyright © 2024 Auracore Tech. All rights reserved.</span>
+                  <span>Copyright © 2025 Auracore Tech. All rights reserved.</span>
                </div>
             </div>
          </div>
