@@ -635,6 +635,7 @@ i {
   /* background: #171818; */
   padding-top: 5%;
   padding-bottom: 5%;
+  /* max-height: fit-content!important; */
   
 
 }
@@ -679,14 +680,20 @@ i {
       height: 400px;
       overflow: hidden;
       border-radius: 10px; }
+    #portfolioSection .portfolio-box .img-box-app {
+      height: 500px;
+      overflow: hidden;
+      border-radius: 10px; }
       #portfolioSection .portfolio-box .img-box img {
         filter: grayscale(100%);
         transition: .4s; }
       #portfolioSection .portfolio-box .img-box .img-fluid {
         width: -webkit-fill-available !important;
-        height: -webkit-fill-available !important; }
+        height: -webkit-fill-available !important;
+        
+       }
     #portfolioSection .portfolio-box .hover-txt {
-      background: #1d1e22;
+      background: #f4f5f9;
       padding: 30px;
       width: 90%;
       position: absolute;
@@ -696,26 +703,58 @@ i {
       border-radius: 10px;
       transition: .4s; }
       #portfolioSection .portfolio-box .hover-txt .category {
-        color: #7f9a9d;
+        color: #021231;
         font-size: 18px;
         position: relative; }
       #portfolioSection .portfolio-box .hover-txt .category:before {
         content: "";
         height: 2px;
         width: 50px;
-        background: #453E69;
+        background: #f4f5f9!important;
         position: absolute;
         border-radius: 3px;
         bottom: 9px;
         right: -70px; }
       #portfolioSection .portfolio-box .hover-txt p {
-        color: #7f9a9d;
+        color: #021231;
         margin-bottom: 0;
         font-size: 22px; }
   #portfolioSection .portfolio-box:hover .img-box img {
     filter: grayscale(0%); }
   #portfolioSection .portfolio-box:hover .hover-txt {
     transform: translateY(-115%); }
+    #portfolioSection .portfolio-box .hover-txt-app {
+      background: #f4f5f9;
+      padding: 30px;
+      width: 35%;
+      position: absolute;
+      left: 5%;
+      display: block;
+      margin: auto;
+      border-radius: 10px;
+      transition: .4s; }
+      #portfolioSection .portfolio-box .hover-txt-app .category {
+        color: #021231;
+        font-size: 18px;
+        position: relative; }
+      #portfolioSection .portfolio-box .hover-txt-app .category:before {
+        content: "";
+        height: 2px;
+        width: 50px;
+        background: #f4f5f9!important;
+        position: absolute;
+        border-radius: 3px;
+        bottom: 9px;
+        right: -70px; }
+      #portfolioSection .portfolio-box .hover-txt-app p {
+        color: #021231;
+        margin-bottom: 0;
+        font-size: 22px; }
+  #portfolioSection .portfolio-box:hover .img-box img {
+    filter: grayscale(0%); }
+  #portfolioSection .portfolio-box:hover .hover-txt-app {
+    transform: translateY(-115%); }
+   
 
 .portfolio-preview {
   background: #fff;
@@ -1489,10 +1528,27 @@ i {
 #about{
   display: grid;
   grid-template-columns: 1fr 1fr;
+  min-height: 50vh;
+  width: 85vw;
+  margin: 0 auto;
+  padding: 150px 0px 150px 0px;
+  align-items: center;
+ 
+}
+#aboutMb{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
   min-height: 90vh;
   width: 85vw;
   margin: 0 auto;
   padding: 150px 0px 150px 0px;
+  align-items: center;
+ 
+}
+#aboutMb .image{
+  position: relative;
+  z-index: 1;
+ 
 }
 
 #about .content{
@@ -1582,6 +1638,10 @@ i {
     grid-template-columns: 1fr;
     width: 100%;
 }
+  #aboutMb{
+    grid-template-columns: 2fr;
+    width: 100%;
+}
 #about .image{
     height: 100vh;
 }
@@ -1617,7 +1677,7 @@ i {
     padding: 10px !important; }
     #navigration .sidenav {
       position: absolute;
-      background: #222429;
+      background: #f4f5f9;
       top: 0;
       left: -305px;
       width: 280px;
@@ -1645,11 +1705,11 @@ i {
       display: inline; }
       #navigration .nav-item .nav-link {
         padding: 15px;
-        color: #9ca3a9;
+        color: #192D53;
         border-top: 1px solid #ffffff1a; }
         #navigration .nav-item .nav-link .fal {
           float: right;
-          background: #453E69;
+          background: #192D53;
           position: relative;
           top: -3px;
           color: #fff;
@@ -1670,7 +1730,7 @@ i {
           color: #9ca3a9; }
           #navigration .nav-item .dropdown-menus .dropdown-item .fal {
             float: right;
-            background: #453E69;
+            background: #A6C2F7;
             position: relative;
             top: 0px;
             color: #fff;
