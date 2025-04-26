@@ -36,19 +36,7 @@
       .card{
       background-color: #F6F9F9;
    }
-     .profile-card {
-        max-width: 100%;
-        width: 850px;
-        margin: auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background: #F6F9F9;
-        border-radius: 15px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        overflow: hidden;
-        padding: 30px;
-    }
+     
 
     .details-section {
         flex: 1;
@@ -119,6 +107,27 @@
     position: absolute;
     left: 200px;
     object-fit: cover;} */
+
+    @media (max-width: 992px) { #about { grid-template-columns: 1fr; padding: 100px 20px; } }
+      /* PROFILE CARD */
+      .profile-card {
+         display: flex; flex-wrap: wrap; justify-content: center; align-items: center;
+         background: #F6F9F9; border-radius: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+         padding: 30px; gap: 20px;
+      }
+      .details-section { flex: 1; padding-right: 20px; }
+      .details-section h2 { font-size: 30px; color: #1d1b42; margin-bottom: 5px; font-weight: bold; }
+      .details-section p { font-size: 20px; color: #666; margin-bottom: 10px; line-height: 1.5; }
+      .image-container { flex: 0 0 40%; display: flex; align-items: center; justify-content: center; }
+      .image-container img { width: 100%; max-width: 250px; height: 250px; border-radius: 50%; border: 5px solid #ddd; object-fit: cover; }
+      @media (max-width: 576px) {
+         .profile-card { flex-direction: column; padding: 20px; }
+         .details-section { text-align: center; padding-right: 0; }
+         .image-container { margin-bottom: 20px; }
+         #team .card img {
+            margin-left: 20px;
+         }
+      }
   </style>
 
     
@@ -133,7 +142,7 @@
    <nav id="navigration" class="navbar fixed-top p-0">
       <div class="container">
          
-        <a class="logo" href="#"><img src="img/AURACORE TECH LOGO NAME PIC.png" alt="Auracore Tech Logo" class="img-fluid" style="max-height: 60px;"></a>
+        <a class="logo" href="index.html"><img src="img/AURACORE TECH LOGO NAME PIC.png" alt="Auracore Tech Logo" class="img-fluid" style="max-height: 60px;"></a>
          <div class="sidenav">
             <div class="header">
                <a class="logo d-lg-none" href="#">Auracore Tech</a>
@@ -147,10 +156,10 @@
                   <div id="menu2" class="dropdown-menus collapse">
                      <a class="dropdown-item" href="webpage.html"><span>Web Development</span></a>
                      <a class="dropdown-item" href="app.html"><span>App Development</span></a>
-                     <a class="dropdown-item" href=""><span>Graphics Design</span></a>
-                     <a class="dropdown-item" href=""><span>UI/UX Design</span></a>
+                     <a class="dropdown-item" href="graphics.html"><span>Graphics Design</span></a>
+                     <a class="dropdown-item" href="ui.html"><span>UI/UX Design</span></a>
                      <a class="dropdown-item" href=""><span>Digital Marketing</span></a> 
-                     <a class="dropdown-item" href=""><span>Video Editing</span></a> 
+                     <a class="dropdown-item" href="video.html"><span>Content Editing</span></a> 
                   </div>
                </li>
                <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
@@ -190,9 +199,9 @@
                   <div class="card">
                     <img src="./img/Job_Pic.jpeg"class="card-img-top" alt="...">
                     <div class="card-body">
-                      <h5 class="card-title">Intejar Meherab</h5>
+                      <h5 class="card-title">INTEJAR MEHERAB</h5>
                       <h6 class="card-title">CTO, WEB LEAD</h6>
-                      <p class="card-text">Hi there! I am a full stack Web Developer and Chief Technology Officer of Auracore Tech. I will be your Web Guy! Feel free to reach me.</p>
+                      <p class="card-text">Hi there! I’m a Full Stack Web Developer and the Chief Technology Officer at Auracore Tech. I’m here to be your go-to Web Specialist. Feel free to reach out to me anytime!</p>
                     </div>
                    
                   </div>
@@ -201,9 +210,9 @@
                   <div class="card">
                     <img src="./img/ceo.jpg"class="card-img-top" alt="...">
                     <div class="card-body">
-                      <h5 class="card-title">Abdurnur Rafi</h5>
+                      <h5 class="card-title">ABDUN NOOR RAFI</h5>
                       <h6 class="card-title">Founder, CEO</h6>
-                      <p class="card-text">Hi there! I am a Digital Marketer & Business Consultant also Chief Executive Officer of Auracore Tech. I will be your Business guy! Feel free to reach me.</p>
+                      <p class="card-text">Hi there! I’m a Digital Marketer and Business Consultant, as well as the Chief Executive Officer of Auracore Tech.  Feel free to reach out to me anytime!</p>
                     </div>
                   
                   </div>
@@ -212,9 +221,9 @@
                   <div class="card">
                     <img src="./img/abir.png" class="card-img-top" alt="Azmain Picture Daw">
                     <div class="card-body">
-                      <h5 class="card-title">Azmain Iqbal</h5>
+                      <h5 class="card-title">AZMAIN IQBAL</h5>
                       <h6 class="card-title">COO, APP Lead</h6>
-                      <p class="card-text">Hi there! I am a Andriod & IOS App Developer and Chief Operating Officer of Auracore Tech. I will be your App Guy! Feel free to reach me.</p>
+                      <p class="card-text">Hi there! I’m an Android and iOS App Developer, and the Chief Operating Officer at Auracore Tech. I’m here to be your trusted App Specialist. Feel free to reach out to me anytime!</p>
                     </div>
                     
                   </div>

@@ -24,9 +24,44 @@
    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.4.0/build/spline-viewer.js"></script>
    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+   <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.12.0/tsparticles.bundle.min.js"></script>
    
+<style>
+   @media (max-width: 552px) {
+      .img-box-app{
+      padding-left: 15%;
+   }
+   }
+   
+</style>
+<style>
+   #bannerSection {
+  background: #021231;
+  position: relative;
+  margin-top: 90px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+}
 
-    
+/* Overlay gets the padding */
+#bannerSection .overlay {
+  position: relative !important;
+  z-index: 1;
+  /* padding: 10%; */
+}
+
+/* Particle Background Container */
+#tsparticles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+}
+
+</style>
 
 
 </head>
@@ -38,10 +73,10 @@
    <nav id="navigration" class="navbar fixed-top p-0">
       <div class="container">
          
-        <a class="logo" href="#"><img src="img/AURACORE TECH LOGO NAME PIC.png" alt="Auracore Tech Logo" class="img-fluid" style="max-height: 60px;"></a>
+        <a class="logo" href="index.html"><img src="img/AURACORE TECH LOGO NAME PIC.png" alt="Auracore Tech Logo" class="img-fluid" style="max-height: 60px;"></a>
          <div class="sidenav">
             <div class="header">
-               <a class="logo d-lg-none" href="#"><img src="img/AURACORE TECH LOGO NAME PIC.png" alt="Auracore Tech Logo" class="img-fluid" style="max-height: 60px;"></a>
+               <a class="logo d-lg-none" href="#">Auracore Tech</a>
                <a href="#" class="d-lg-none" id="showsidenav"><img src="img/icon/letter-x.png" alt=""> </a>
             </div>
             <ul class="mb-0">
@@ -52,10 +87,10 @@
                   <div id="menu2" class="dropdown-menus collapse">
                      <a class="dropdown-item" href="webpage.html"><span>Web Development</span></a>
                      <a class="dropdown-item" href="app.html"><span>App Development</span></a>
-                     <a class="dropdown-item" href=""><span>Graphics Design</span></a>
-                     <a class="dropdown-item" href=""><span>UI/UX Design</span></a>
+                     <a class="dropdown-item" href="graphics.html"><span>Graphics Design</span></a>
+                     <a class="dropdown-item" href="ui.html"><span>UI/UX Design</span></a>
                      <a class="dropdown-item" href=""><span>Digital Marketing</span></a> 
-                     <a class="dropdown-item" href=""><span>Video Editing</span></a> 
+                     <a class="dropdown-item" href="video.html"><span>Content Editing</span></a> 
                   </div>
                </li>
                <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
@@ -75,7 +110,7 @@
 
    <!-- ======================================== HOME SECTION ======================================== -->
    <section id="bannerSection">
-      
+      <div id="tsParticles"></div>
          <div class="">
             <div class="overlay">
                <div class="container">
@@ -274,7 +309,7 @@
             
             </div>
          </div>
-          <div class="col-lg-3 col-md-6">
+          <div class="col-lg-3 col-md-6 mt-3">
              <div class="service-box wow slideInRight" data-wow-duration="1.5s">
                 <div class="txt-area">
                    <h3>01</h3>
@@ -286,7 +321,7 @@
                 </div>
              </div>
           </div>
-          <div class="col-lg-3 col-md-6">
+          <div class="col-lg-3 col-md-6 mt-3">
              <div class="service-box wow slideInRight" data-wow-duration="1.5s">
                 <div class="txt-area">
                    <h3>02</h3>
@@ -374,7 +409,7 @@
                <div class="col-md-6 col-lg-2 mix web"></div>
                <div class="col-md-6 col-lg-5 mix web">
                   <div class="portfolio-box">
-                     <div class="img-box-app">
+                     <div class="img-box-app ">
                         <a href="#portfolioPreview01" class="popup-with-zoom-anim">
                            <img src="img/imgc/mb-2.png" class="img-fluid" alt="">
                         </a>
@@ -859,11 +894,29 @@
    <script src="js/owl.carousel.min.js"></script>
    <script src="js/custom.js"></script>
    <script>
-
-
-
-
-
+      document.addEventListener('DOMContentLoaded', function () {
+      tsParticles.load("tsparticles", {
+         particles: {
+            number: { value: 100, density: { enable: true, value_area: 900 } },
+            color: { value: "#A6C2F7" },
+            shape: { type: "circle" },
+            opacity: { value: 0.5, random: true },
+            size: { value: 3, random: true },
+            move: { enable: true, speed: 1 },
+            line_linked: {
+               enable: true,
+               distance: 150,
+               color: "#A6C2F7",
+               opacity: 0.3,
+               width: 1
+            }
+         },
+         interactivity: {
+            events: {
+               onHover: { enable: true, mode: "repulse" }
+            }
+         }
+      })});
    </script>
 </body>
 </html>
