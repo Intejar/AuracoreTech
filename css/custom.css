@@ -634,7 +634,9 @@ i {
       opacity: 0; }
     #serviceSection .service-box:hover .img-box .img02 {
       opacity: 1; }
-
+.video-container{
+  z-index: 2;
+}
 #portfolioSection {
   /* background: #171818; */
   padding-top: 5%;
