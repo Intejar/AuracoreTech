@@ -419,7 +419,7 @@
   justify-content: center;
   cursor: pointer;
   z-index: 9999;
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
 }
 
 @media (max-width: 600px) {
@@ -550,7 +550,7 @@
     @media (max-width: 600px) {
       .chat-container {
         width: 95vw;
-        height: 75vh;
+        height: 70vh;
         left: 10px;
       }
 
@@ -592,7 +592,8 @@
                <li class="nav-item dropdown">
                   <a class="nav-link" data-toggle="collapse" href="#menu2">Services <i class="fal fa-angle-down"></i></a>
                   <div id="menu2" class="dropdown-menus collapse">
-                     <a class="dropdown-item" href="webpage.html"><span>Web Development</span></a>
+                     <a class="dropdown-item" href="webpage.html"><span>Dynamic Web Development</span></a>
+                     <a class="dropdown-item" href="webdesign.html"><span>Web Design</span></a>
                      <a class="dropdown-item" href="app.html"><span>App Development</span></a>
                      <a class="dropdown-item" href="ai.html"><span>AI/ML</span></a>
                      <a class="dropdown-item" href="digital.html"><span>Digital Marketing</span></a> 
@@ -614,7 +615,33 @@
       </div>
    </nav>
 
-
+   <div id="chat-head">
+    <img src="/img/imgc/chathead.png" alt="Chat" style="width: 70%; height: 70%; border-radius: 50%;" />
+  </div>
+  <div class="chat-container hidden" id="chat-modal">
+    <div class="chat-header">
+      <h2>AI Assistant</h2>
+      <button id="reset-button">Reset</button>
+    </div>
+    <div class="chat-box" id="chat-box">
+      <div class="message assistant">Hello! How can I help you today?</div>
+    </div>
+    <div class="chat-input">
+      <input type="text" id="message-input" placeholder="Type your message..." />
+      <button id="send-button">Send</button>
+    </div>
+    <div class="status" id="status"></div>
+  </div>
+   <script>
+    // Ensure message input gets focused once DOM is ready
+    window.addEventListener('DOMContentLoaded', () => {
+      const input = document.getElementById('message-input');
+      if (document.activeElement !== input) {
+        input.focus();
+      }
+    });
+  </script>
+  <script src="script.js"></script>
 
    <!-- ======================================== HOME SECTION ======================================== -->
    <section id="homeSection">
@@ -1249,35 +1276,10 @@
       </div>
     
 
-      <div id="chat-head">
-    <img src="/img/imgc/chathead.png" alt="Chat" style="width: 70%; height: 70%; border-radius: 50%;" />
-  </div>
+   
 
   <!-- Chat Modal -->
-  <div class="chat-container hidden" id="chat-modal">
-    <div class="chat-header">
-      <h2>AI Assistant</h2>
-      <button id="reset-button">Reset</button>
-    </div>
-    <div class="chat-box" id="chat-box">
-      <div class="message assistant">Hello! How can I help you today?</div>
-    </div>
-    <div class="chat-input">
-      <input type="text" id="message-input" placeholder="Type your message..." />
-      <button id="send-button">Send</button>
-    </div>
-    <div class="status" id="status"></div>
-  </div>
-   <script>
-    // Ensure message input gets focused once DOM is ready
-    window.addEventListener('DOMContentLoaded', () => {
-      const input = document.getElementById('message-input');
-      if (document.activeElement !== input) {
-        input.focus();
-      }
-    });
-  </script>
-  <script src="./script.js"></script>
+  
    </section>
 
 
@@ -1307,6 +1309,14 @@
    <script>
     const chatHead = document.getElementById("chat-head");
     const chatModal = document.getElementById("chat-modal");
+    document.addEventListener("click", function (e) {
+  const isClickInsideModal = chatModal.contains(e.target);
+  const isClickOnChatHead = chatHead.contains(e.target);
+
+  if (!isClickInsideModal && !isClickOnChatHead) {
+    chatModal.classList.add("hidden");
+  }
+});
 
     chatHead.addEventListener("click", () => {
       chatModal.classList.toggle("hidden");

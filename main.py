@@ -19,8 +19,8 @@ load_dotenv()
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 FRONTEND_DIR = os.path.join(BASE_DIR, "frontend")
 # Allow overriding paths via .env, default to assets/data/ relative to main.py
-PERSONA_FILE_PATH = os.getenv("PERSONA_FILE_PATH", os.path.join(BASE_DIR, "/assets/data/persona.txt"))
-FAQ_FILE_PATH = os.getenv("FAQ_FILE_PATH", os.path.join(BASE_DIR, "/assets/data/faq.json"))
+PERSONA_FILE_PATH = os.getenv("PERSONA_FILE_PATH", os.path.join(BASE_DIR, "assets/data/persona.txt"))
+FAQ_FILE_PATH = os.getenv("FAQ_FILE_PATH", os.path.join(BASE_DIR, "assets/data/faq.json"))
 
 MAX_HISTORY_LENGTH = int(os.getenv("MAX_HISTORY_LENGTH", 5))
 ASSISTANT_NAME = os.getenv("ASSISTANT_NAME", "Aura")
@@ -63,7 +63,8 @@ origins = [
     "http://127.0.0.1:8000",
     "http://localhost",
     "http://127.0.0.1",
-    "http://127.0.0.1:5500"
+    "http://127.0.0.1:5500",
+    "https://auracoretech.com"
     # Add your deployed frontend URL(s) here
     # "https://your-frontend-domain.com",
 ]

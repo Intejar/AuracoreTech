@@ -1291,7 +1291,7 @@ i {
     #contactArea{
       background: white!important;
       position: relative;
-      z-index: 3;
+      z-index: 2;
     }
 #contactArea .contact-box {
   background: #F6F9F9;
@@ -1299,7 +1299,8 @@ i {
   padding: 80px;
   position: relative;
   transform: translateY(80px);
-  z-index: 1; }
+  z-index: 1;
+  }
 
 #contactArea .row {
   align-items: center; }
@@ -1336,7 +1337,7 @@ i {
   background: #021231;
   position: relative;
   padding-top: 160px;
-z-index: 2;
+z-index: 1;
 }
   
   #footerSection .footer-box .logo {
